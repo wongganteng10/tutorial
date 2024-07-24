@@ -1,0 +1,12 @@
+network:
+  version: 2
+  renderer: networkd
+  ethernets:
+    enp0s3: # Antarmuka untuk jalur internet melalui NAT
+      dhcp4: true
+    enp0s8: # Antarmuka untuk jalur koneksi ke jaringan fisik host
+      dhcp4: false
+      addresses: [192.168.1.10/24] # Konfigurasi IP statis
+      gateway4: 192.168.1.1
+      nameservers:
+        addresses: [8.8.8.8, 8.8.4.4]

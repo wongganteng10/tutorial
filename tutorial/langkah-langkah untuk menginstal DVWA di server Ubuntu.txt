@@ -1,0 +1,58 @@
+Berikut adalah langkah-langkah untuk menginstal DVWA di server Ubuntu:
+
+Update dan upgrade server Ubuntu Anda dengan menjalankan perintah berikut:
+bash
+
+sudo apt update
+sudo apt upgrade
+
+Instal apache, php, dan mysql di server Ubuntu Anda dengan menjalankan perintah berikut:
+bash
+
+sudo apt install apache2 php libapache2-mod-php php-mysql
+
+Mulai layanan apache dengan menjalankan perintah berikut:
+bash
+
+sudo systemctl start apache2
+
+Enable layanan apache untuk dijalankan saat boot dengan menjalankan perintah berikut:
+bash
+
+sudo systemctl enable apache2
+
+Download dan ekstrak file DVWA dari repository Github ke direktori /var/www/html dengan menjalankan perintah berikut:
+
+Copy code
+cd /var/www/html
+sudo wget https://github.com/digininja/DVWA/archive/master.zip
+sudo unzip master.zip
+sudo mv DVWA-master dvwa
+
+Setel file config.inc.php agar sesuai dengan database Anda. Buka file tersebut dengan menggunakan text editor seperti nano atau vim:
+bash
+
+sudo nano /var/www/html/dvwa/config/config.inc.php
+
+Ubah bagian username, password, dan database sesuai dengan konfigurasi database Anda. Contoh:
+
+php
+Download
+Copy code
+$_DVWA[ 'db_user' ]   = 'root';
+$_DVWA[ 'db_password' ] = 'password';
+$_DVWA[ 'db_database' ] = 'dvwa';
+Ubah izin file dan folder DVWA untuk memberikan akses baca dan tulis kepada server apache:
+bash
+Download
+Copy code
+
+sudo chown -R www-data:www-data /var/www/html/DVWA-master
+sudo chmod -R 755 /var/www/html/DVWA-master
+Restart layanan apache untuk memastikan konfigurasi yang telah diubah berlaku:
+bash
+Download
+Copy code
+sudo systemctl restart apache2
+Buka browser dan akses DVWA dengan alamat http://your_server_ip/dvwa. Untuk panduan penggunaan lebih lanjut, Anda dapat membuka file README.md di folder DVWA.
+Jangan lupa untuk mengkonfigurasi firewall atau server VPN agar DVWA tidak dapat diakses secara publik. Hati-hati dengan cara menginstal dan menggunakan DVWA karena sistem ini dirancang untuk pengembangan dan pendidikan serta tidak sepenuhnya aman untuk penggunaan di produksi.

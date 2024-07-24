@@ -1,0 +1,35 @@
+Untuk mengkonfigurasi HTTP proxy di sistem Kali Linux, Anda dapat mengikuti langkah-langkah berikut:
+
+1. **Buka Berkas Environment Variables**: Buka berkas environment variables yang disebut `~/.bashrc`. Anda bisa menggunakan editor teks seperti `nano` atau `vi`. Misalnya:
+
+    ```
+    nano ~/.bashrc
+    ```
+
+2. **Tambahkan Konfigurasi Proxy**: Di akhir berkas `.bashrc`, tambahkan baris-baris berikut (sesuaikan dengan proxy yang Anda inginkan):
+
+    ```
+    export http_proxy=http://alamat_proxy:port
+    export https_proxy=http://alamat_proxy:port
+    export ftp_proxy=http://alamat_proxy:port
+    ```
+
+    Ganti `alamat_proxy` dan `port` dengan alamat dan port dari proxy HTTP yang ingin Anda gunakan.
+
+3. **Simpan Perubahan dan Keluar**: Setelah menambahkan baris-baris tersebut, tekan `Ctrl + X`, lalu tekan `Y` untuk menyimpan perubahan, dan tekan `Enter` untuk keluar dari editor.
+
+4. **Muat Ulang Berkas Environment**: Setelah menyimpan perubahan di `.bashrc`, muat ulang berkas environment untuk menerapkan perubahan yang baru saja Anda buat. Anda bisa melakukan ini dengan menjalankan perintah:
+
+    ```
+    source ~/.bashrc
+    ```
+
+5. **Verifikasi Konfigurasi**: Untuk memastikan konfigurasi proxy telah berhasil, Anda dapat menjalankan perintah `echo` untuk menampilkan nilai dari variabel proxy. Misalnya:
+
+    ```
+    echo $http_proxy
+    ```
+
+    Ini akan menampilkan nilai dari variabel `http_proxy`, yang seharusnya sesuai dengan proxy yang Anda konfigurasi sebelumnya.
+
+Setelah langkah-langkah di atas selesai, proxy HTTP Anda sekarang telah dikonfigurasi di sistem Kali Linux. Pastikan Anda memeriksa kembali pengaturan proxy untuk memastikan semuanya berfungsi seperti yang diharapkan.

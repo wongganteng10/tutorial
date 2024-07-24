@@ -1,0 +1,8 @@
+tethering proxy ubuntu server
+
+sudo nano /etc/environment
+
+export http_proxy="http://192.168.43.1:7071/"
+export https_proxy="http://192.168.43.1:7071/"
+
+source /etc/environment

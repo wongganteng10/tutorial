@@ -1,0 +1,33 @@
+Untuk menginstal Composer di server Ubuntu, Anda bisa mengikuti langkah-langkah berikut:
+
+1. **Update Package Repository**: Pastikan paket pada server Anda diperbarui terlebih dahulu dengan perintah:
+   ```
+   sudo apt update
+   ```
+
+2. **Install Dependensi**: Instal dependensi yang diperlukan untuk Composer dengan perintah:
+   ```
+   sudo apt install php-cli php-zip unzip
+   ```
+
+3. **Download Composer**: Unduh Composer menggunakan curl:
+   ```
+   sudo curl -sS https://getcomposer.org/installer | sudo php
+   ```
+
+4. **Pindahkan Composer ke Direktori Global**: Pindahkan file Composer yang telah diunduh ke direktori yang dapat diakses secara global:
+   ```
+   sudo mv composer.phar /usr/local/bin/composer
+   ```
+
+5. **Memberikan Izin Eksekusi**: Berikan izin eksekusi ke Composer:
+   ```
+   sudo chmod +x /usr/local/bin/composer
+   ```
+
+6. **Verifikasi Instalasi**: Verifikasi bahwa Composer telah terinstal dengan menjalankan perintah:
+   ```
+   composer --version
+   ```
+
+Sekarang Composer harus terinstal di server Ubuntu Anda dan Anda dapat menggunakannya untuk mengelola dependensi PHP di proyek Anda.

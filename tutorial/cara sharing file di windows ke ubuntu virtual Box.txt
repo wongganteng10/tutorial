@@ -1,0 +1,17 @@
+cara sharing file di windows ke ubuntu virtual Box 
+
+1. buat folder yang ingin di sharing pada windows 
+	nama foldernya = [windows-sharing]
+	
+2. seting pada Virtual-Box yang bagian sharing folder
+3. buat folder yang ingin di sharing pada ubuntu
+	nama foldernya = [ubuntu-sharing]
+	
+4. ketik perintah di terminal ubuntu Virtual-Box nya agar bisa sharing-file 
+	=> $ sudo mount -t vboxsf windows-sharing ubuntu-sharing
+	=> lalu tekan enter
+5. jika kalau pengen folder [ubuntu-sharing] di unmount ketik perintah di bawah ini lewat terminla ubuntu nya
+	=> $ sudo umount ubuntu-sharing
+	=> lalu enter 
+
+

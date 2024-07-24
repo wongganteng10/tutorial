@@ -1,0 +1,37 @@
+Untuk menambahkan pengaturan proxy pada server Ubuntu tanpa menggunakan aplikasi tambahan, Anda dapat mengonfigurasi pengaturan proxy langsung melalui file konfigurasi sistem. Berikut adalah langkah-langkahnya:
+
+1. Buka file konfigurasi untuk proxy:
+
+    ```
+    sudo nano /etc/environment
+    ```
+
+2. Tambahkan baris berikut di bagian bawah file untuk menetapkan variabel lingkungan `http_proxy` dan `https_proxy`:
+
+    ```
+    #http_proxy=http://192.168.43.1:7071/
+    #https_proxy=http://192.168.43.1:7071/
+
+    http_proxy=http://192.168.42.129:7071/
+    https_proxy=http://192.168.42.129:7071/
+    ```
+
+    Jika diperlukan, Anda juga dapat menambahkan konfigurasi untuk `no_proxy` untuk mengecualikan beberapa alamat dari penggunaan proxy:
+
+    ```
+    no_proxy=localhost,127.0.0.1,<other_no_proxy_addresses>
+    ```
+
+    Ganti `<other_no_proxy_addresses>` dengan daftar alamat yang tidak perlu melalui proxy.
+
+3. Simpan perubahan dengan menekan `Ctrl + X`, kemudian ketik `Y` untuk menyimpan, dan tekan Enter untuk mengonfirmasi.
+
+4. Setelah menyimpan perubahan, terapkan pengaturan baru dengan menjalankan perintah berikut:
+
+    ```
+    source /etc/environment
+    ```
+
+    Ini akan memuat ulang variabel lingkungan tanpa harus me-restart sistem.
+
+Dengan langkah-langkah ini, proxy akan diterapkan pada semua proses dan perintah yang dijalankan di server Ubuntu. Pastikan untuk mengganti `192.168.43.1:7071` dengan alamat dan port proxy yang sesuai dengan pengaturan Anda.
