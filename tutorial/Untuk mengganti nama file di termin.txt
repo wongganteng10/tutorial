@@ -1,0 +1,37 @@
+Untuk mengganti nama file di terminal, Anda dapat menggunakan perintah `mv` (move) pada sistem operasi Linux atau Unix, termasuk Ubuntu. Berikut adalah contoh penggunaan perintah `mv` untuk mengganti nama file:
+
+### Mengganti Nama File Satu File:
+
+```bash
+mv nama_file_lama nama_file_baru
+```
+
+Contoh:
+
+```bash
+mv file_awal.txt file_terbaru.txt
+```
+
+### Mengganti Nama File Secara Massal dengan Wildcard:
+
+Jika Anda ingin mengganti nama beberapa file sekaligus dengan pola tertentu, Anda dapat menggunakan wildcard `*`. Contoh berikut mengganti nama semua file yang diawali dengan "data_" menjadi diawali dengan "backup_":
+
+```bash
+mv data_* backup_*
+```
+
+### Mengganti Nama File dengan Menggunakan `find` dan `xargs`:
+
+```bash
+find /lokasi/awal -name "pola_file*" -print0 | xargs -0 -I {} mv {} /lokasi/tujuan/nama_baru_{}
+```
+
+Contoh:
+
+```bash
+find /home/user/documents -name "report*" -print0 | xargs -0 -I {} mv {} /home/user/documents/backup_{}
+```
+
+Perintah ini akan mencari file dengan nama yang sesuai dengan pola tertentu, kemudian mengganti nama file tersebut dengan menambahkan "backup_" di depannya.
+
+Pastikan untuk melakukan pengujian terlebih dahulu sebelum melakukan perubahan yang signifikan, terutama jika Anda menggunakan wildcard atau perintah yang dapat memengaruhi banyak file sekaligus. Jangan lupa membuat cadangan jika diperlukan.

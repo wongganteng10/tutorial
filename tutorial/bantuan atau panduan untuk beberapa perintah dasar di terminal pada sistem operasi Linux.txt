@@ -1,0 +1,105 @@
+tolong rubah teks di bawah ini dengan bahasa yang mudah di pahami dalam bahasa indonesia dan berikan contohnya beserta penjelasan nya 
+
+
+root@ubuntu22044-3:/home/file teks# help
+GNU bash, versi 5.1.16(1)-release (x86_64-pc-linux-gnu)
+Perintah-perintah shell ini didefinisikan secara internal. Ketik 'help' untuk melihat daftar ini.
+Ketik 'help nama' untuk mengetahui lebih lanjut tentang fungsi 'nama'.
+Gunakan 'info bash' untuk mengetahui lebih lanjut tentang shell secara umum.
+Gunakan 'man -k' atau 'info' untuk mengetahui lebih lanjut tentang perintah-perintah tidak ada dalam daftar ini.
+
+Bintang (*) di samping nama berarti bahwa perintah tersebut dinonaktifkan.
+
+ job_spec [&]                                      history [-c] [-d offset] [n] atau history -anrw >
+ (( expression ))                                  if COMMANDS; then COMMANDS; [ elif COMMANDS; t>
+ . filename [arguments]                            jobs [-lnprs] [jobspec ...] or jobs -x command>
+ :                                                 kill [-s sigspec | -n signum | -sigspec] pid |>
+ [ arg... ]                                        let arg [arg ...]
+ [[ expression ]]                                  local [option] name[=value] ...
+ alias [-p] [name[=value] ... ]                    logout [n]
+ bg [job_spec ...]                                 mapfile [-d delim] [-n count] [-O origin] [-s >
+ bind [-lpsvPSVX] [-m keymap] [-f filename] [-q >  popd [-n] [+N | -N]
+ break [n]                                         printf [-v var] format [arguments]
+ builtin [shell-builtin [arg ...]]                 pushd [-n] [+N | -N | dir]
+ caller [expr]                                     pwd [-LP]
+ case WORD in [PATTERN [| PATTERN]...) COMMANDS >  read [-ers] [-a array] [-d delim] [-i text] [->
+ cd [-L|[-P [-e]] [-@]] [dir]                      readarray [-d delim] [-n count] [-O origin] [->
+ command [-pVv] command [arg ...]                  readonly [-aAf] [name[=value] ...] or readonly>
+ compgen [-abcdefgjksuv] [-o option] [-A action]>  return [n]
+ complete [-abcdefgjksuv] [-pr] [-DEI] [-o optio>  select NAME [in WORDS ... ;] do COMMANDS; done
+ compopt [-o|+o option] [-DEI] [name ...]          set [-abefhkmnptuvxBCHP] [-o option-name] [--]>
+ continue [n]                                      shift [n]
+ coproc [NAME] command [redirections]              shopt [-pqsu] [-o] [optname ...]
+ declare [-aAfFgiIlnrtux] [-p] [name[=value] ...>  source filename [arguments]
+ dirs [-clpv] [+N] [-N]                            suspend [-f]
+ disown [-h] [-ar] [jobspec ... | pid ...]         test [expr]
+ echo [-neE] [arg ...]                             time [-p] pipeline
+ enable [-a] [-dnps] [-f filename] [name ...]      times
+ eval [arg ...]                                    trap [-lp] [[arg] signal_spec ...]
+ exec [-cl] [-a name] [command [argument ...]] [>  true
+ exit [n]                                          type [-afptP] name [name ...]
+ export [-fn] [name[=value] ...] or export -p      typeset [-aAfFgiIlnrtux] [-p] name[=value] ...
+ false                                             ulimit [-SHabcdefiklmnpqrstuvxPT] [limit]
+ fc [-e ename] [-lnr] [first] [last] atau fc -s [p>  umask [-p] [-S] [mode]
+ fg [job_spec]                                     unalias [-a] name [name ...]
+ for NAME [in WORDS ... ] ; do COMMANDS; done      unset [-f] [-v] [-n] [name ...]
+ for (( exp1; exp2; exp3 )); do COMMANDS; done     until COMMANDS; do COMMANDS; done
+ function name { COMMANDS ; } atau name () { COMMA>  variables - Nama dan makna beberapa variabel shell v>
+ getopts optstring name [arg ...]                  wait [-fn] [-p var] [id ...]
+ hash [-lr] [-p pathname] [-dt] [name ...]         while COMMANDS; do COMMANDS; done
+ help [-dms] [pattern ...]                         { COMMANDS ; }
+root@ubuntu22044-3:/home/file teks#
+
+==============================================
+==============================================
+==============================================
+==============================================
+
+root@ubuntu22044-3:/home/file teks# help
+GNU bash, version 5.1.16(1)-release (x86_64-pc-linux-gnu)
+These shell commands are defined internally.  Type `help' to see this list.
+Type `help name' to find out more about the function `name'.
+Use `info bash' to find out more about the shell in general.
+Use `man -k' or `info' to find out more about commands not in this list.
+
+A star (*) next to a name means that the command is disabled.
+
+ job_spec [&]                                      history [-c] [-d offset] [n] or history -anrw >
+ (( expression ))                                  if COMMANDS; then COMMANDS; [ elif COMMANDS; t>
+ . filename [arguments]                            jobs [-lnprs] [jobspec ...] or jobs -x command>
+ :                                                 kill [-s sigspec | -n signum | -sigspec] pid |>
+ [ arg... ]                                        let arg [arg ...]
+ [[ expression ]]                                  local [option] name[=value] ...
+ alias [-p] [name[=value] ... ]                    logout [n]
+ bg [job_spec ...]                                 mapfile [-d delim] [-n count] [-O origin] [-s >
+ bind [-lpsvPSVX] [-m keymap] [-f filename] [-q >  popd [-n] [+N | -N]
+ break [n]                                         printf [-v var] format [arguments]
+ builtin [shell-builtin [arg ...]]                 pushd [-n] [+N | -N | dir]
+ caller [expr]                                     pwd [-LP]
+ case WORD in [PATTERN [| PATTERN]...) COMMANDS >  read [-ers] [-a array] [-d delim] [-i text] [->
+ cd [-L|[-P [-e]] [-@]] [dir]                      readarray [-d delim] [-n count] [-O origin] [->
+ command [-pVv] command [arg ...]                  readonly [-aAf] [name[=value] ...] or readonly>
+ compgen [-abcdefgjksuv] [-o option] [-A action]>  return [n]
+ complete [-abcdefgjksuv] [-pr] [-DEI] [-o optio>  select NAME [in WORDS ... ;] do COMMANDS; done
+ compopt [-o|+o option] [-DEI] [name ...]          set [-abefhkmnptuvxBCHP] [-o option-name] [--]>
+ continue [n]                                      shift [n]
+ coproc [NAME] command [redirections]              shopt [-pqsu] [-o] [optname ...]
+ declare [-aAfFgiIlnrtux] [-p] [name[=value] ...>  source filename [arguments]
+ dirs [-clpv] [+N] [-N]                            suspend [-f]
+ disown [-h] [-ar] [jobspec ... | pid ...]         test [expr]
+ echo [-neE] [arg ...]                             time [-p] pipeline
+ enable [-a] [-dnps] [-f filename] [name ...]      times
+ eval [arg ...]                                    trap [-lp] [[arg] signal_spec ...]
+ exec [-cl] [-a name] [command [argument ...]] [>  true
+ exit [n]                                          type [-afptP] name [name ...]
+ export [-fn] [name[=value] ...] or export -p      typeset [-aAfFgiIlnrtux] [-p] name[=value] ...
+ false                                             ulimit [-SHabcdefiklmnpqrstuvxPT] [limit]
+ fc [-e ename] [-lnr] [first] [last] or fc -s [p>  umask [-p] [-S] [mode]
+ fg [job_spec]                                     unalias [-a] name [name ...]
+ for NAME [in WORDS ... ] ; do COMMANDS; done      unset [-f] [-v] [-n] [name ...]
+ for (( exp1; exp2; exp3 )); do COMMANDS; done     until COMMANDS; do COMMANDS; done
+ function name { COMMANDS ; } or name () { COMMA>  variables - Names and meanings of some shell v>
+ getopts optstring name [arg ...]                  wait [-fn] [-p var] [id ...]
+ hash [-lr] [-p pathname] [-dt] [name ...]         while COMMANDS; do COMMANDS; done
+ help [-dms] [pattern ...]                         { COMMANDS ; }
+root@ubuntu22044-3:/home/file teks#

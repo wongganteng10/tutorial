@@ -1,0 +1,35 @@
+Untuk mengirim file ke server, Anda dapat menggunakan beberapa protokol dan metode yang berbeda, tergantung pada kebutuhan dan preferensi Anda. Di sini, saya akan menjelaskan dua cara umum: menggunakan Secure Copy Protocol (SCP) dan menggunakan File Transfer Protocol (FTP).
+
+**1. Menggunakan SCP:**
+SCP adalah cara yang aman untuk mentransfer file antara dua host melalui jaringan. Pastikan server Anda mendukung SCP dan akses SSH telah diaktifkan. Berikut adalah contoh penggunaan SCP:
+
+```bash
+scp /lokasi/lokalisumber/file.txt username@alamat_server:/lokasi/lokasitujuan/
+```
+
+Gantilah "/lokasi/lokalisumber/file.txt" dengan lokasi file yang ingin Anda kirim, "username" dengan nama pengguna Anda di server, "alamat_server" dengan alamat IP atau nama domain server, dan "/lokasi/lokasitujuan/" dengan lokasi tujuan di server.
+
+Contoh:
+
+```bash
+scp /path/to/local/file.txt user@example.com:/path/to/remote/directory/
+```
+
+Anda akan diminta memasukkan kata sandi pengguna pada server setelah menjalankan perintah di atas.
+
+**2. Menggunakan FTP:**
+FTP adalah protokol transfer file yang umum digunakan. Untuk menggunakan FTP, Anda perlu menginstal server FTP pada server dan klien FTP pada mesin lokal Anda. Contoh penggunaan FTP:
+
+```bash
+ftp alamat_server
+```
+
+Setelah terhubung, masukkan nama pengguna dan kata sandi Anda. Selanjutnya, gunakan perintah FTP untuk mentransfer file. Contoh:
+
+```bash
+put /lokasi/lokalisumber/file.txt /lokasi/lokasitujuan/file.txt
+```
+
+Gantilah "/lokasi/lokalisumber/file.txt" dengan lokasi file yang ingin Anda kirim dan "/lokasi/lokasitujuan/file.txt" dengan lokasi tujuan di server.
+
+Pilihlah metode yang sesuai dengan kebutuhan keamanan dan kenyamanan Anda. Jika keamanan adalah prioritas, disarankan untuk menggunakan SCP yang menggunakan enkripsi SSH. Jika Anda lebih memilih fleksibilitas, FTP mungkin menjadi pilihan yang baik.

@@ -1,0 +1,810 @@
+ubuntu@ubuntu-VirtualBox:~$ a
+aa-enabled               alsa-info                apt-cache                arptables-save
+aa-exec                  alsaloop                 apt-cdrom                aseqdump
+aa-features-abi          alsamixer                apt-config               aseqnet
+aa-remove-unknown        alsatplg                 aptd                     aspell
+aa-status                alsaucm                  aptdcon                  aspell-autobuildhash
+aa-teardown              amidi                    apt-extracttemplates     aspell-import
+accessdb                 amixer                   apt-ftparchive           atobm
+aconnect                 anacron                  apt-get                  avahi-autoipd
+acpid                    apg                      apt-key                  avahi-browse
+acpi_listen              apgbfm                   apt-mark                 avahi-browse-domains
+add-apt-repository       aplay                    apt-sortpkgs             avahi-daemon
+addgnupghome             aplaymidi                apturl                   avahi-publish
+addgroup                 apparmor_parser          apturl-gtk               avahi-publish-address
+addpart                  apparmor_status          arch                     avahi-publish-service
+add-shell                applygnupgdefaults       arecord                  avahi-resolve
+adduser                  apport-bug               arecordmidi              avahi-resolve-address
+agetty                   apport-cli               arm2hpdl                 avahi-resolve-host-name
+airscan-discover         apport-collect           arp                      avahi-set-host-name
+alert                    apport-unpack            arpd                     avinfo
+alias                    appres                   arptables                awk
+alsa                     appstreamcli             arptables-nft            axfer
+alsabat                  apropos                  arptables-nft-restore
+alsabat-test             apt                      arptables-nft-save
+alsactl                  apt-add-repository       arptables-restore
+ubuntu@ubuntu-VirtualBox:~$ a
+
+==============================
+==============================
+ubuntu@ubuntu-VirtualBox:~$ b
+b2sum             bg                bluetooth-sendto  browse            bzegrep
+badblocks         bind              bmtoa             btattach          bzexe
+baobab            biosdecode        boltctl           btmgmt            bzfgrep
+base32            bitmap            bootctl           btmon             bzgrep
+base64            blkdeactivate     break             builtin           bzip2
+basename          blkdiscard        bridge            bunzip2           bzip2recover
+basenc            blkid             brltty            busctl            bzless
+bash              blkzone           brltty-ctb        busybox           bzmore
+bashbug           blockdev          brltty-setup      bwrap
+bc                bluemoon          brltty-trtxt      bzcat
+bdftopcf          bluetoothctl      brltty-ttb        bzcmp
+bdftruncate       bluetoothd        broadwayd         bzdiff
+ubuntu@ubuntu-VirtualBox:~$ b
+
+
+==============================
+==============================
+ubuntu@ubuntu-VirtualBox:~$ c
+calibrate_ppa              chmod                      cpan
+caller                     choom                      cpan5.34-x86_64-linux-gnu
+canberra-gtk-play          chown                      cpgr
+cancel                     chpasswd                   cpio
+capsh                      chroot                     cpp
+captoinfo                  chrt                       cpp-11
+case                       chsh                       cppw
+cat                        chvt                       cracklib-check
+catman                     ciptool                    cracklib-format
+cautious-launcher          ckbcomp                    cracklib-packer
+cd                         cksum                      cracklib-unpacker
+cd-create-profile          clear                      create-cracklib-dict
+cd-fix-profile             clear_console              c_rehash
+cd-iccdump                 cmp                        cron
+cd-it8                     codepage                   crontab
+cfdisk                     col                        csplit
+cgdisk                     colcrt                     ctrlaltdel
+chacl                      colormgr                   ctstat
+chage                      colrm                      cupsaccept
+chardet                    column                     cups-browsed
+chardetect                 comm                       cupsctl
+chat                       command                    cupsd
+chattr                     command_not_found_handle   cupsdisable
+chcon                      compgen                    cupsenable
+chcpu                      complete                   cupsfilter
+check-language-support     compopt                    cupsreject
+cheese                     compose                    cupstestppd
+chfn                       continue                   curl
+chgpasswd                  coproc                     cut
+chgrp                      corelist                   cvt
+chmem                      cp                         cvtsudoers
+ubuntu@ubuntu-VirtualBox:~$ c
+
+
+
+==============================
+==============================
+ubuntu@ubuntu-VirtualBox:~$ d
+dash                                dh_installxmlcatalogs
+date                                dh_perl_openssl
+dbus-cleanup-sockets                diff
+dbus-daemon                         diff3
+dbus-monitor                        dig
+dbus-run-session                    dir
+dbus-send                           dircolors
+dbus-update-activation-environment  dirmngr
+dbus-uuidgen                        dirmngr-client
+dbxtool                             dirname
+dc                                  dirs
+dcb                                 dirsplit
+dconf                               disown
+dd                                  distro-info
+ddstdecode                          dmesg
+deallocvt                           dmidecode
+debconf                             dmsetup
+debconf-apt-progress                dmstats
+debconf-communicate                 dnsdomainname
+debconf-copydb                      dnsmasq
+debconf-escape                      do
+debconf-set-selections              domainname
+debconf-show                        done
+debian-distro-info                  do-release-upgrade
+deb-systemd-helper                  dosfsck
+deb-systemd-invoke                  dosfslabel
+debugfs                             dpkg
+declare                             dpkg-deb
+deja-dup                            dpkg-divert
+delgroup                            dpkg-maintscript-helper
+delpart                             dpkg-preconfigure
+deluser                             dpkg-query
+delv                                dpkg-realpath
+depmod                              dpkg-reconfigure
+dequote                             dpkg-split
+desktop-file-edit                   dpkg-statoverride
+desktop-file-install                dpkg-trigger
+desktop-file-validate               driverless
+devdump                             driverless-fax
+devlink                             du
+df                                  dumpe2fs
+dfu-tool                            dumpkeys
+dh_bash-completion                  duplicity
+dhclient                            dvipdf
+dhclient-script
+ubuntu@ubuntu-VirtualBox:~$ d
+
+
+
+==============================
+==============================
+ubuntu@ubuntu-VirtualBox:~$ e
+e2freefrag            ebtables-nft-save     else                  ethtool
+e2fsck                ebtables-restore      enable                eutp
+e2image               ebtables-save         enc2xs                eval
+e2label               echo                  encguess              evince
+e2mmpstatus           ed                    enchant-2             evince-previewer
+e2scrub               edit                  enchant-lsmod-2       evince-thumbnailer
+e2scrub_all           editor                env                   ex
+e2undo                editres               envsubst              exec
+e4crypt               efibootdump           eog                   exit
+e4defrag              efibootmgr            eps2eps               expand
+ebtables              egrep                 eqn                   expiry
+ebtables-nft          eject                 esac                  export
+ebtables-nft-restore  elif                  esc-m                 expr
+ubuntu@ubuntu-VirtualBox:~$ e
+
+
+
+==============================
+==============================
+ubuntu@ubuntu-VirtualBox:~$ f
+factor               file2brl             foo2lava             fsck.cramfs
+faillock             filefrag             foo2lava-wrapper     fsck.ext2
+faillog              file-roller          foo2oak              fsck.ext3
+fallocate            fincore              foo2oak-wrapper      fsck.ext4
+false                find                 foo2qpdl             fsck.fat
+fatlabel             findfs               foo2qpdl-wrapper     fsck.minix
+fc                   findmnt              foo2slx              fsck.msdos
+fc-cache             firefox              foo2slx-wrapper      fsck.vfat
+fc-cat               firefox.geckodriver  foo2xqx              fsfreeze
+fc-conflist          fixparts             foo2xqx-wrapper      fstab-decode
+fc-list              flock                foo2zjs              fstrim
+fc-match             fmt                  foo2zjs-icc2ps       ftp
+fc-pattern           fold                 foo2zjs-pstops       function
+fc-query             fonttosfnt           foo2zjs-wrapper      funzip
+fc-scan              foo2ddst             foomatic-rip         fuser
+fc-validate          foo2ddst-wrapper     for                  fusermount
+fdisk                foo2hbpl2            fprintd-delete       fusermount3
+fg                   foo2hbpl2-wrapper    fprintd-enroll       futurize
+fgconsole            foo2hiperc           fprintd-list         fwupdagent
+fgrep                foo2hiperc-wrapper   fprintd-verify       fwupdate
+fi                   foo2hp               free                 fwupdmgr
+file                 foo2hp2600-wrapper   fsck                 fwupdtool
+ubuntu@ubuntu-VirtualBox:~$ f
+
+
+
+==============================
+==============================
+ubuntu@ubuntu-VirtualBox:~$ g
+Display all 174 possibilities? (y or n)
+gamemoded                     gnome-keyring-3               grub-editenv
+gamemoderun                   gnome-keyring-daemon          grub-file
+gamemode-simulate-game        gnome-language-selector       grub-fstest
+gamma4scanimage               gnome-logs                    grub-glue-efi
+gapplication                  gnome-mahjongg                grub-install
+gatttool                      gnome-menus-blacklist         grub-kbdcomp
+gcalccmd                      gnome-mines                   grub-macbless
+gcore                         gnome-power-statistics        grub-menulst2cfg
+gcr-viewer                    gnome-session                 grub-mkconfig
+gdb                           gnome-session-custom-session  grub-mkdevicemap
+gdb-add-index                 gnome-session-inhibit         grub-mkfont
+gdbtui                        gnome-session-properties      grub-mkimage
+gdbus                         gnome-session-quit            grub-mklayout
+gdialog                       gnome-shell                   grub-mknetdir
+gdisk                         gnome-shell-extension-tool    grub-mkpasswd-pbkdf2
+gdk-pixbuf-csource            gnome-shell-perf-tool         grub-mkrelpath
+gdk-pixbuf-pixdata            gnome-sudoku                  grub-mkrescue
+gdk-pixbuf-thumbnailer        gnome-system-monitor          grub-mkstandalone
+gdm3                          gnome-terminal                grub-mount
+gdmflexiserver                gnome-terminal.real           grub-ntldr-img
+gdm-screenshot                gnome-terminal.wrapper        grub-probe
+geckodriver                   gnome-text-editor             grub-reboot
+gedit                         gnome-thumbnail-font          grub-render-label
+genisoimage                   gnome-todo                    grub-script-check
+genl                          gnome-www-browser             grub-set-default
+geqn                          google-chrome                 grub-syslinux2cfg
+getcap                        google-chrome-stable          gs
+getconf                       gpasswd                       gsbj
+geteltorito                   gpg                           gsdj
+getent                        gpg-agent                     gsdj500
+getfacl                       gpgcompose                    gsettings
+getkeycodes                   gpgconf                       gslj
+getopt                        gpg-connect-agent             gslp
+getopts                       gpgparsemail                  gsnd
+getpcaps                      gpgsm                         gst-device-monitor-1.0
+gettext                       gpgsplit                      gst-discoverer-1.0
+gettext.sh                    gpgtar                        gst-inspect-1.0
+getty                         gpgv                          gst-launch-1.0
+getweb                        gpg-wks-server                gst-play-1.0
+ghostscript                   gpg-zip                       gstreamer-codec-install
+ginstall-info                 gpic                          gst-stats-1.0
+gio                           gpu-manager                   gst-tester-1.0
+gio-querymodules              grdctl                        gst-typefind-1.0
+gipddecode                    grep                          gtbl
+gjs                           gresource                     gtf
+gjs-console                   groff                         gtk4-builder-tool
+gkbd-keyboard-display         grog                          gtk4-encode-symbolic-svg
+glib-compile-schemas          grops                         gtk4-launch
+gnome-calculator              grotty                        gtk4-query-settings
+gnome-calendar                groupadd                      gtk4-update-icon-cache
+gnome-characters              groupdel                      gtk-builder-tool
+gnome-control-center          groupmems                     gtk-encode-symbolic-svg
+gnome-disk-image-mounter      groupmod                      gtk-launch
+gnome-disks                   groups                        gtk-query-settings
+gnome-extensions              grpck                         gtk-update-icon-cache
+gnome-font-viewer             grpconv                       gunzip
+gnome-help                    grpunconv                     gzexe
+gnome-keyring                 grub-bios-setup               gzip
+ubuntu@ubuntu-VirtualBox:~$ g
+
+
+
+==============================
+==============================
+ubuntu@ubuntu-VirtualBox:~$ h
+h2ph                   head                   hp-align               hp-pkservice
+h2xs                   help                   hp-check               hp-plugin
+halt                   helpztags              hp-clean               hp-plugin-ubuntu
+hardlink               hex2hcd                hp-colorcal            hp-probe
+hash                   hexdump                hp-config_usb_printer  hp-query
+hbpldecode             hipercdecode           hp-doctor              hp-scan
+hciattach              history                hp-firmware            hp-setup
+hciconfig              host                   hp-info                hp-testpage
+hcitool                hostid                 hp-levels              hp-timedate
+hd                     hostname               hp-logcapture          hwclock
+hdparm                 hostnamectl            hp-makeuri             hwe-support-status
+
+==============================
+==============================
+ubuntu@ubuntu-VirtualBox:~$ i
+i386                         intel-virtual-output         iptables-legacy-save
+ibus                         invoke-rc.d                  iptables-nft
+ibus-daemon                  ionice                       iptables-nft-restore
+ibus-setup                   ip                           iptables-nft-save
+ibus-table-createdb          ip6tables                    iptables-restore
+iceauth                      ip6tables-apply              iptables-restore-translate
+ico                          ip6tables-legacy             iptables-save
+iconv                        ip6tables-legacy-restore     iptables-translate
+iconvconfig                  ip6tables-legacy-save        iptables-xml
+id                           ip6tables-nft                iptunnel
+iecset                       ip6tables-nft-restore        irqbalance
+if                           ip6tables-nft-save           irqbalance-ui
+ifconfig                     ip6tables-restore            ischroot
+ijs_pxljr                    ip6tables-restore-translate  isdv4-serial-debugger
+im-config                    ip6tables-save               isdv4-serial-inputattach
+im-launch                    ip6tables-translate          isodump
+in                           ipcmk                        isoinfo
+info                         ipcrm                        isosize
+infobrowser                  ipcs                         isovfy
+infocmp                      ipmaddr                      ispell-autobuildhash
+infotocap                    ipod-read-sysinfo-extended   ispell-wrapper
+init                         ipod-time-sync               iucode-tool
+inputattach                  ippeveprinter                iucode_tool
+insmod                       ippfind                      iwconfig
+install                      ipptool                      iwevent
+install-info                 ipp-usb                      iwgetid
+installkernel                iptables                     iwlist
+install-printerdriver        iptables-apply               iwpriv
+install-sgmlcatalog          iptables-legacy              iwspy
+instmodsh                    iptables-legacy-restore
+
+==============================
+==============================
+ubuntu@ubuntu-VirtualBox:~$ j
+jobs        join        journalctl  jpgicc      json_pp
+ubuntu@ubuntu-VirtualBox:~$ j
+
+
+
+==============================
+==============================
+ubuntu@ubuntu-VirtualBox:~$ k
+kbdinfo            kbxutil            kerneloops-submit  killall            kmodsign
+kbd_mode           kernel-install     keyring            killall5
+kbdrate            kerneloops         kill               kmod
+ubuntu@ubuntu-VirtualBox:~$ k
+
+
+
+==============================
+==============================
+ubuntu@ubuntu-VirtualBox:~$ l
+Display all 109 possibilities? (y or n)
+l                            ln                           lp_solve
+l2ping                       lnstat                       lpstat
+l2test                       loadkeys                     ls
+la                           loadunimap                   lsattr
+laptop-detect                local                        lsblk
+last                         localc                       lsb_release
+lastb                        locale                       lscpu
+lastlog                      locale-check                 lshw
+lavadecode                   localectl                    lsinitramfs
+lcf                          localedef                    lsipc
+ldattach                     locale-gen                   lslocks
+ldconfig                     lodraw                       lslogins
+ldconfig.real                loffice                      lsmem
+ldd                          lofromtemplate               lsmod
+less                         logger                       lsns
+lessecho                     login                        lsof
+lessfile                     loginctl                     lspci
+lesskey                      logname                      lspcmcia
+lesspipe                     logout                       lspgpot
+let                          logrotate                    lsusb
+lexgrog                      logsave                      luit
+libnetcfg                    loimpress                    lwp-download
+libreoffice                  lomath                       lwp-dump
+libwacom-list-devices        look                         lwp-mirror
+libwacom-list-local-devices  losetup                      lwp-request
+libwacom-show-stylus         loweb                        lzcat
+libwacom-update-db           lowntfs-3g                   lzcmp
+link                         lowriter                     lzdiff
+linkicc                      lp                           lzegrep
+linux32                      lpadmin                      lzfgrep
+linux64                      lpc                          lzgrep
+linux-boot-prober            lpinfo                       lzless
+linux-check-removal          lpmove                       lzma
+linux-update-symlinks        lpoptions                    lzmainfo
+linux-version                lpq                          lzmore
+listres                      lpr
+ll                           lprm
+ubuntu@ubuntu-VirtualBox:~$ l
+
+
+
+==============================
+==============================
+ubuntu@ubuntu-VirtualBox:~$ m
+m2300w                            mkfs.minix
+m2300w-wrapper                    mkfs.msdos
+m2400w                            mkfs.ntfs
+make-ssl-cert                     mkfs.vfat
+mako-render                       mkhomedir_helper
+man                               mkinitramfs
+mandb                             mkisofs
+manpath                           mklost+found
+man-recode                        mk_modmap
+mapfile                           mknod
+mapscrn                           mkntfs
+mawk                              mksquashfs
+mcookie                           mkswap
+md5sum                            mktemp
+md5sum.textutils                  mkzftree
+mdig                              mmcli
+mesa-overlay-control.py           modinfo
+mesg                              modprobe
+migrate-pubring-from-classic-gpg  mokutil
+mii-tool                          monitor-sensor
+mimeopen                          more
+mimetype                          mount
+min12xxw                          mount.fuse
+mkdir                             mount.fuse3
+mkdosfs                           mount.lowntfs-3g
+mke2fs                            mount.ntfs
+mkfifo                            mount.ntfs-3g
+mkfontdir                         mountpoint
+mkfontscale                       mousetweaks
+mkfs                              mscompress
+mkfs.bfs                          msexpand
+mkfs.cramfs                       mt
+mkfs.ext2                         mt-gnu
+mkfs.ext3                         mtr
+mkfs.ext4                         mtr-packet
+mkfs.fat                          mv
+ubuntu@ubuntu-VirtualBox:~$ m
+
+
+
+==============================
+==============================
+ubuntu@ubuntu-VirtualBox:~$ n
+namei                      nisdomainname              ntfscat
+nameif                     nl                         ntfsclone
+nano                       nm-applet                  ntfscluster
+nautilus                   nmcli                      ntfscmp
+nautilus-autorun-software  nm-connection-editor       ntfscp
+nautilus-sendto            nm-online                  ntfsdecrypt
+nawk                       nmtui                      ntfsfallocate
+nc                         nmtui-connect              ntfsfix
+nc.openbsd                 nmtui-edit                 ntfsinfo
+neqn                       nmtui-hostname             ntfslabel
+netcat                     nohup                      ntfsls
+netplan                    nologin                    ntfsmove
+netstat                    notify-send                ntfsrecover
+networkctl                 nproc                      ntfsresize
+networkd-dispatcher        nroff                      ntfssecaudit
+newgrp                     nsenter                    ntfstruncate
+newusers                   nslookup                   ntfsundelete
+nfnl_osf                   nstat                      ntfsusermap
+nft                        nsupdate                   ntfswipe
+ngettext                   ntfs-3g                    numfmt
+nice                       ntfs-3g.probe              nvidia-detector
+ubuntu@ubuntu-VirtualBox:~$ n
+
+
+
+==============================
+==============================
+ubuntu@ubuntu-VirtualBox:~$ o
+oakdecode        oem-getlogs      openssl          orca
+obexctl          on_ac_power      openvpn          orca-dm-wrapper
+oclock           oomctl           openvt           os-prober
+od               open             opldecode        ownership
+ubuntu@ubuntu-VirtualBox:~$ o
+
+
+
+
+==============================
+==============================
+ubuntu@ubuntu-VirtualBox:~$ p
+Display all 186 possibilities? (y or n)
+p11-kit                    pidwait                    prove
+pacat                      pinentry                   prtstat
+pacmd                      pinentry-curses            ps
+pactl                      pinentry-gnome3            ps2ascii
+padsp                      pinentry-x11               ps2epsi
+pager                      ping                       ps2pdf
+pa-info                    ping4                      ps2pdf12
+pam-auth-update            ping6                      ps2pdf13
+pam_extrausers_chkpwd      pinky                      ps2pdf14
+pam_extrausers_update      pipewire                   ps2pdfwr
+pam_getenv                 pipewire-media-session     ps2ps
+pamon                      pivot_root                 ps2ps2
+pam_timestamp_check        pkaction                   ps2txt
+paperconf                  pkcheck                    psfaddtable
+paperconfig                pkcon                      psfgettable
+paplay                     pkexec                     psfstriptable
+parec                      pkill                      psfxtable
+parecord                   pkmon                      psicc
+parted                     pkttyagent                 pslog
+partprobe                  pl2pm                      pstree
+partx                      pldd                       pstree.x11
+passwd                     plipconfig                 ptar
+paste                      plog                       ptardiff
+pasteurize                 plymouth                   ptargrep
+pasuspender                plymouthd                  ptx
+patch                      pmap                       pulseaudio
+pathchk                    pnm2ppa                    pushd
+pax11publish               pod2html                   pw-cat
+pccardctl                  pod2man                    pwck
+pdb3                       pod2text                   pw-cli
+pdb3.10                    pod2usage                  pwconv
+pdf2dsc                    podchecker                 pwd
+pdf2ps                     poff                       pw-dot
+pdfattach                  pon                        pw-dsdplay
+pdfdetach                  popd                       pw-dump
+pdffonts                   poweroff                   pwdx
+pdfimages                  powerprofilesctl           pw-link
+pdfinfo                    ppdc                       pw-loopback
+pdfseparate                ppdhtml                    pw-metadata
+pdfsig                     ppdi                       pw-mididump
+pdftocairo                 ppdmerge                   pw-midiplay
+pdftohtml                  ppdpo                      pw-midirecord
+pdftoppm                   pphs                       pw-mon
+pdftops                    pppd                       pw-play
+pdftotext                  pppdump                    pw-profiler
+pdfunite                   pppoe-discovery            pw-record
+peekfd                     pppstats                   pw-reserve
+perl                       pptp                       pw-top
+perl5.34.0                 pptpsetup                  pwunconv
+perl5.34-x86_64-linux-gnu  pr                         pw-v4l2
+perlbug                    precat                     py3clean
+perldoc                    preconv                    py3compile
+perli11ndoc                preunzip                   py3versions
+perlivp                    prezip                     pydoc3
+perlthanks                 prezip-bin                 pydoc3.10
+pf2afm                     print                      pygettext3
+pfbtopfa                   printafm                   pygettext3.10
+pgrep                      printenv                   python3
+pic                        printer-profile            python3.10
+pico                       printf                     python3-futurize
+piconv                     prlimit                    python3-pasteurize
+pidof                      pro                        pzstd
+ubuntu@ubuntu-VirtualBox:~$ p
+
+
+
+
+==============================
+==============================
+ubuntu@ubuntu-VirtualBox:~$ q
+qpdldecode      quirks-handler  quote           quote_readline
+ubuntu@ubuntu-VirtualBox:~$ q
+
+==============================
+==============================
+ubuntu@ubuntu-VirtualBox:~$ r
+rarp                     remmina-gnome            rhythmbox                rsync
+rbash                    remove-default-ispell    rhythmbox-client         rsync-ssl
+rcp                      remove-default-wordlist  rlogin                   rsyslogd
+rctest                   remove-shell             rm                       rtacct
+rdiffdir                 rendercheck              rmdir                    rtcwake
+rdma                     renice                   rmmod                    rtkitctl
+read                     reset                    rmt                      rtmon
+readarray                resize2fs                rmt-tar                  rtstat
+readlink                 resizecons               rnano                    runcon
+readonly                 resizepart               route                    runlevel
+readprofile              resolvectl               routef                   run-mailcap
+realpath                 return                   routel                   run-parts
+reboot                   rev                      rrsync                   runuser
+red                      rfcomm                   rsh                      run-with-aspell
+remmina                  rfkill                   rstart                   rview
+remmina-file-wrapper     rgrep                    rstartd                  rygel
+ubuntu@ubuntu-VirtualBox:~$ r
+
+
+
+
+==============================
+==============================
+ubuntu@ubuntu-VirtualBox:~$ s
+Display all 176 possibilities? (y or n)
+saned                                  software-properties-gtk
+sane-find-scanner                      sol
+savelog                                sort
+sbattach                               source
+sbkeysync                              spa-acp-tool
+sbsiglist                              spa-inspect
+sbsign                                 spa-json-dump
+sbvarsign                              spa-monitor
+sbverify                               spa-resample
+scanimage                              spd-conf
+scp                                    spd-say
+scp-dbus-service                       spdsend
+screendump                             speaker-test
+script                                 speech-dispatcher
+scriptlive                             speedtest
+scriptreplay                           spice-vdagent
+sdiff                                  spice-vdagentd
+sdptool                                splain
+seahorse                               split
+sed                                    splitfont
+see                                    sqfscat
+select                                 sqfstar
+select-default-ispell                  ss
+select-default-iwrap                   ssh
+select-default-wordlist                ssh-add
+select-editor                          ssh-agent
+sensible-browser                       ssh-argv0
+sensible-editor                        ssh-copy-id
+sensible-pager                         sshd
+seq                                    ssh-import-id
+service                                ssh-import-id-gh
+session-migration                      ssh-import-id-lp
+sessreg                                ssh-keygen
+set                                    ssh-keyscan
+setarch                                start-pulseaudio-x11
+setcap                                 start-stop-daemon
+setfacl                                startx
+setfont                                stat
+setkeycodes                            static-sh
+setleds                                stdbuf
+setlogcons                             strace
+setmetamode                            strace-log-merge
+setpci                                 streamzip
+setpriv                                stty
+setsid                                 su
+setterm                                sudo
+setupcon                               sudoedit
+setvesablank                           sudo_logsrvd
+setvtrgb                               sudoreplay
+setxkbmap                              sudo_sendlog
+sfdisk                                 sulogin
+sftp                                   sum
+sg                                     suspend
+sgdisk                                 swaplabel
+sh                                     swapoff
+sha1sum                                swapon
+sha224sum                              switcherooctl
+sha256sum                              switch_root
+sha384sum                              sync
+sha512sum                              sysctl
+shadowconfig                           system-config-printer
+shasum                                 system-config-printer-applet
+shift                                  systemctl
+shopt                                  systemd
+shotwell                               systemd-analyze
+showconsolefont                        systemd-ask-password
+showkey                                systemd-cat
+showrgb                                systemd-cgls
+shred                                  systemd-cgtop
+shuf                                   systemd-cryptenroll
+shutdown                               systemd-delta
+simple-scan                            systemd-detect-virt
+skill                                  systemd-escape
+slabtop                                systemd-hwdb
+slattach                               systemd-id128
+sleep                                  systemd-inhibit
+slogin                                 systemd-machine-id-setup
+slxdecode                              systemd-mount
+smproxy                                systemd-notify
+snap/                                  systemd-path
+snapctl                                systemd-run
+snapfuse                               systemd-socket-activate
+snap-store                             systemd-stdio-bridge
+snap-store.ubuntu-software             systemd-sysext
+snap-store.ubuntu-software-local-file  systemd-sysusers
+snice                                  systemd-tmpfiles
+soelim                                 systemd-tty-ask-password-agent
+soffice                                systemd-umount
+ubuntu@ubuntu-VirtualBox:~$ s
+
+
+
+
+
+==============================
+==============================
+ubuntu@ubuntu-VirtualBox:~$ t
+tabs                     telnet.netkit            tnftp                    troff
+tac                      tempfile                 toe                      true
+tail                     test                     top                      truncate
+tar                      then                     totem                    trust
+tarcat                   thermald                 totem-video-thumbnailer  tset
+taskset                  thunderbird              touch                    tsort
+tbl                      tic                      tput                     tty
+tc                       tificc                   tr                       tune2fs
+tclsh                    time                     tracepath                type
+tclsh8.6                 timedatectl              tracker3                 typeset
+tcpdump                  timeout                  transicc                 tzconfig
+tee                      times                    transmission-gtk         tzselect
+telinit                  tipc                     transset
+telnet                   tload                    trap
+ubuntu@ubuntu-VirtualBox:~$ t
+
+
+==============================
+==============================
+ubuntu@ubuntu-VirtualBox:~$ u
+ua                          unix_chkpwd                 update-info-dir
+ubuntu-advantage            unix_update                 update-initramfs
+ubuntu-bug                  unlink                      update-locale
+ubuntu-core-launcher        unlzma                      update-manager
+ubuntu-distro-info          unmkinitramfs               update-mime
+ubuntu-drivers              unopkg                      update-mime-database
+ubuntu-report               unset                       update-notifier
+ubuntu-security-status      unshare                     update-passwd
+ucf                         unsquashfs                  update-pciids
+ucfq                        until                       update-rc.d
+ucfr                        unxz                        update-secureboot-policy
+uclampset                   unzip                       update-shells
+ucs2any                     unzipsfx                    update-xmlcatalog
+u-d-c-print-pci-ids         unzstd                      upgrade-from-grub-legacy
+udevadm                     update-alternatives         upower
+udisksctl                   update-ca-certificates      uptime
+ufw                         update-catalog              usb-creator-gtk
+ul                          update-cracklib             usb-devices
+ulimit                      update-default-aspell       usbhid-dump
+umask                       update-default-ispell       usb_modeswitch
+umax_pp                     update-default-wordlist     usb_modeswitch_dispatcher
+umount                      update-desktop-database     usbmuxd
+umount.udisks2              update-dictcommon-aspell    usb_printerid
+unalias                     update-dictcommon-hunspell  usbreset
+uname                       update-fonts-alias          useradd
+unattended-upgrade          update-fonts-dir            userdel
+unattended-upgrades         update-fonts-scale          usermod
+uncompress                  update-grub                 users
+unexpand                    update-grub2                utmpdump
+unicode_start               update-grub-gfxpayload      uuidd
+unicode_stop                update-gsfontmap            uuidgen
+uniq                        update-icon-caches          uuidparse
+unity-scope-loader          update-inetd
+ubuntu@ubuntu-VirtualBox:~$ u
+
+
+==============================
+==============================
+ubuntu@ubuntu-VirtualBox:~$ v
+validlocale               visudo                    vmware-rpctool
+vcstime                   vmhgfs-fuse               vmware-toolbox-cmd
+vdir                      vmstat                    vmware-user
+vdpa                      vm-support                vmware-user-suid-wrapper
+vi                        vmtoolsd                  vmware-vgauth-cmd
+view                      vmware-alias-import       vmware-vmblock-fuse
+viewres                   vmware-checkvm            vmware-xferlogs
+vigr                      vmwarectrl                vmwgfxctrl
+vim.tiny                  vmware-hgfsclient         vpddecode
+vipw                      vmware-namespace-cmd      vstp
+ubuntu@ubuntu-VirtualBox:~$ v
+
+
+==============================
+==============================
+ubuntu@ubuntu-VirtualBox:~$ w
+w                     wget                  who                   wpa_cli
+wait                  whatis                whoami                wpa_passphrase
+wall                  whereis               whoopsie              wpa_supplicant
+watch                 which                 whoopsie-preferences  write
+watchgnupg            which.debianutils     wipefs                write.ul
+wc                    while                 word-list-compress
+wdctl                 whiptail              wpa_action
+ubuntu@ubuntu-VirtualBox:~$ w
+
+==============================
+==============================
+ubuntu@ubuntu-VirtualBox:~$ x
+x11perf                   xedit                     xrdb
+x11perfcomp               xev                       xrefresh
+x86_64                    xeyes                     x-session-manager
+x86_64-linux-gnu-cpp      xfd                       xset
+x86_64-linux-gnu-cpp-11   xfontsel                  xsetmode
+xargs                     xgamma                    xsetpointer
+xauth                     xgc                       xsetroot
+xbiff                     xhost                     xsetwacom
+xbrlapi                   xinit                     xsm
+xcalc                     xinput                    xstdcmap
+xclipboard                xkbbell                   xsubpp
+xclock                    xkbcomp                   xtables-legacy-multi
+xcmsdb                    xkbevd                    xtables-monitor
+xconsole                  xkbprint                  xtables-nft-multi
+xcursorgen                xkbvleds                  x-terminal-emulator
+xcutsel                   xkbwatch                  xvidtune
+xdg-dbus-proxy            xkeystone                 xvinfo
+xdg-desktop-icon          xkill                     xwd
+xdg-desktop-menu          xload                     xwininfo
+xdg-email                 xlogo                     xwud
+xdg-icon-resource         xlsatoms                  x-www-browser
+xdg-mime                  xlsclients                xxd
+xdg-open                  xlsfonts                  xz
+xdg-screensaver           xmag                      xzcat
+xdg-settings              xman                      xzcmp
+xdg-user-dir              xmessage                  xzdiff
+xdg-user-dirs-gtk-update  xmodmap                   xzegrep
+xdg-user-dirs-update      xmore                     xzfgrep
+xditview                  xprop                     xzgrep
+xdpyinfo                  xqxdecode                 xzless
+xdriinfo                  xrandr                    xzmore
+ubuntu@ubuntu-VirtualBox:~$ x
+
+
+
+
+==============================
+==============================
+
+ubuntu@ubuntu-VirtualBox:~$ y
+yelp          yes           ypdomainname
+ubuntu@ubuntu-VirtualBox:~$ y
+
+
+
+
+==============================
+==============================
+ubuntu@ubuntu-VirtualBox:~$ z
+zcat        zegrep      zforce      zipcloak    zipnote     zmore       zstdcat
+zcmp        zenity      zgrep       zipdetails  zipsplit    znew        zstdgrep
+zdiff       zerofree    zic         zipgrep     zjsdecode   zramctl     zstdless
+zdump       zfgrep      zip         zipinfo     zless       zstd        zstdmt
+ubuntu@ubuntu-VirtualBox:~$ z
+
+
+
+
+
+==============================
+==============================
+
+
+
+
+
+
+==============================
+==============================
+
+
+
+
+
+
+

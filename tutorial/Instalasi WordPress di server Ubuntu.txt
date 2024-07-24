@@ -1,0 +1,99 @@
+Instalasi WordPress di server Ubuntu melibatkan beberapa langkah yang perlu diikuti. Berikut adalah panduan langkah demi langkah:
+
+**Langkah 1: Persiapkan Server**
+
+Pastikan server Ubuntu Anda sudah siap. Pastikan juga bahwa Anda memiliki akses root atau akses sudo untuk menjalankan perintah dengan hak istimewa.
+
+**Langkah 2: Instal LAMP Stack**
+
+WordPress memerlukan server web, server database, dan interpreter bahasa pemrograman PHP. Instal LAMP stack (Linux, Apache, MySQL, PHP) dengan perintah berikut:
+
+```bash
+sudo apt update
+sudo apt install apache2 mysql-server php libapache2-mod-php php-mysql
+```
+
+Ikuti petunjuk selama proses instalasi MySQL untuk mengatur kata sandi root MySQL.
+
+**Langkah 3: Konfigurasi Database MySQL**
+
+Masuk ke MySQL dengan perintah:
+
+```bash
+sudo mysql
+```
+
+Buat database untuk WordPress:
+
+```sql
+CREATE DATABASE nama_database;
+```
+
+Buat pengguna baru dan beri izin ke database:
+
+```sql
+CREATE USER 'nama_pengguna'@'localhost' IDENTIFIED BY 'kata_sandi';
+GRANT ALL PRIVILEGES ON nama_database.* TO 'nama_pengguna'@'localhost';
+FLUSH PRIVILEGES;
+exit;
+```
+
+**Langkah 4: Instal PHP dan Ekstensi yang Diperlukan**
+
+Instal PHP dan beberapa ekstensi yang dibutuhkan oleh WordPress:
+
+```bash
+sudo apt install php-curl php-gd php-mbstring php-xml php-xmlrpc php-soap php-intl php-zip
+```
+
+**Langkah 5: Unduh dan Ekstrak WordPress**
+
+Unduh WordPress ke direktori yang diinginkan:
+
+```bash
+wget https://wordpress.org/latest.tar.gz
+tar -xzvf latest.tar.gz
+```
+
+Pindahkan isi direktori WordPress ke direktori root web server:
+
+```bash
+sudo cp -r wordpress/* /var/www/html/
+```
+
+**Langkah 6: Konfigurasi WordPress**
+
+Pergi ke direktori web server:
+
+```bash
+cd /var/www/html/
+```
+
+Salin file konfigurasi contoh:
+
+```bash
+sudo cp wp-config-sample.php wp-config.php
+```
+
+Buka file konfigurasi dan konfigurasikan pengaturan database:
+
+```bash
+sudo nano wp-config.php
+```
+
+Ganti bagian yang sesuai dengan informasi database yang telah Anda buat sebelumnya.
+
+**Langkah 7: Setel Hak Akses**
+
+Pastikan hak akses file dan direktori diatur dengan benar:
+
+```bash
+sudo chown -R www-data:www-data /var/www/html/
+sudo chmod -R 755 /var/www/html/
+```
+
+**Langkah 8: Selesaikan Instalasi melalui Browser**
+
+Buka browser dan akses alamat IP server atau nama domain. Ikuti petunjuk untuk menyelesaikan instalasi WordPress melalui antarmuka web.
+
+Setelah selesai, Anda dapat masuk ke dasbor WordPress dan mulai mengelola situs web Anda. Jangan lupa untuk mengamankan instalasi dengan menonaktifkan hak istimewa tertentu dan melakukan pembaruan keamanan secara teratur.

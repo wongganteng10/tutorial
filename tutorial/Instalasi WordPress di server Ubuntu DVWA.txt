@@ -1,0 +1,118 @@
+DVWA (Damn Vulnerable Web Application) adalah aplikasi web yang dirancang untuk menjadi rentan sehingga dapat digunakan untuk melatih keamanan web. Berikut adalah panduan langkah demi langkah untuk menginstal DVWA di server Ubuntu:
+
+**Langkah 1: Persiapkan Server Ubuntu**
+
+Pastikan server Ubuntu Anda terhubung dengan internet dan telah diupdate:
+
+```bash
+sudo apt update
+sudo apt upgrade
+```
+
+**Langkah 2: Instal LAMP Stack**
+
+Seperti yang dijelaskan sebelumnya, instal LAMP stack (Linux, Apache, MySQL, PHP). Jika Anda belum menginstalnya, lakukan dengan perintah berikut:
+
+```bash
+sudo apt install apache2 mysql-server php libapache2-mod-php php-mysql
+```
+
+**Langkah 3: Instal PHP Composer**
+
+DVWA memerlukan PHP Composer untuk mengelola dependensi. Instal PHP Composer dengan perintah berikut:
+
+```bash
+sudo apt install composer
+```
+
+**Langkah 4: Download DVWA**
+
+Pindah ke direktori root web server dan unduh DVWA dari repositori GitHub:
+
+```bash
+cd /var/www/html/
+sudo git clone https://github.com/ethicalhack3r/DVWA.git
+```
+
+**Langkah 5: Konfigurasi DVWA**
+
+Pindah ke direktori DVWA dan salin file konfigurasi contoh:
+
+```bash
+cd DVWA
+sudo cp config/config.inc.php.dist config/config.inc.php
+```
+
+Buka file konfigurasi dan konfigurasikan pengaturan database:
+
+```bash
+sudo nano config/config.inc.php
+```
+
+Atur parameter berikut sesuai dengan pengaturan database Anda:
+
+```php
+$_DVWA['db_server']   = 'localhost';
+$_DVWA['db_database'] = 'dvwa';
+$_DVWA['db_user']     = 'root';
+$_DVWA['db_password'] = 'password';
+```
+
+Simpan dan keluar dari editor.
+
+**Langkah 6: Setel Hak Akses**
+
+Pastikan hak akses file dan direktori diatur dengan benar:
+
+```bash
+sudo chown -R www-data:www-data /var/www/html/DVWA/
+sudo chmod -R 755 /var/www/html/DVWA/
+```
+
+**Langkah 7: Set Up Database**
+
+Buat database untuk DVWA dan impor skema database yang disediakan:
+
+```bash
+mysql -u root -p
+```
+
+Setelah masuk ke MySQL, buat database dan keluar dari shell MySQL:
+
+```sql
+CREATE DATABASE dvwa;
+EXIT;
+```
+
+Impor skema database:
+
+```bash
+mysql -u root -p dvwa < /var/www/html/DVWA/db/createdb.sql
+```
+
+**Langkah 8: Konfigurasi PHP**
+
+Edit file konfigurasi PHP untuk memungkinkan modul yang diperlukan:
+
+```bash
+sudo nano /etc/php/7.x/apache2/php.ini
+```
+
+Pastikan baris berikut tidak di-comment (hilangkan tanda titik dua di awal baris):
+
+```ini
+; extension=mysqli
+; extension=gd2
+```
+
+Simpan dan keluar dari editor. Kemudian, restart Apache:
+
+```bash
+sudo systemctl restart apache2
+```
+
+**Langkah 9: Akses DVWA Melalui Browser**
+
+Buka browser dan akses DVWA melalui alamat IP server atau nama domain. Anda akan diarahkan ke halaman pengaturan awal. Ikuti petunjuk untuk menyelesaikan instalasi DVWA melalui antarmuka web.
+
+Setelah selesai, Anda dapat masuk ke DVWA dan mulai menggunakannya untuk melatih keamanan web. Pastikan Anda memahami konsekuensi dari menjalankan aplikasi yang rentan di server, dan gunakan DVWA hanya untuk tujuan pengembangan dan pembelajaran keamanan.

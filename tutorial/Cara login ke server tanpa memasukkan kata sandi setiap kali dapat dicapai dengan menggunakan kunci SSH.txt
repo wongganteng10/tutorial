@@ -1,0 +1,56 @@
+Cara login ke server tanpa memasukkan kata sandi setiap kali dapat dicapai dengan menggunakan kunci SSH. Berikut langkah-langkah umumnya:
+
+### 1. **Generate Kunci SSH pada Mesin Lokal:**
+
+Jika Anda belum memiliki pasangan kunci SSH, Anda dapat membuatnya dengan perintah berikut pada mesin lokal:
+
+```bash
+ssh-keygen -t rsa
+```
+
+Perintah ini akan membuat sepasang kunci SSH baru untuk Anda. Saat diminta, biarkan lokasi default (tekan Enter) dan Anda dapat memberikan passphrase atau membiarkannya kosong.
+
+### 2. **Kopi Kunci ke Server:**
+
+Setelah kunci dihasilkan, Anda perlu menyalin kunci publik ke server menggunakan perintah `ssh-copy-id`. Gantilah `username` dan `alamat_ip_server` sesuai dengan informasi server Anda.
+
+```bash
+ssh-copy-id username@alamat_ip_server
+scp C:\Users\ACER\.ssh\id_rsa.pub ubuntu@192.168.43.19:~/.ssh/authorized_keys
+scp c:\Users\ACER\.ssh\id_rsa.pub ubuntu@192.168.43.19:~/.ssh/authorized_keys
+```
+
+Anda akan diminta memasukkan kata sandi akun Anda pada server. Setelah proses ini selesai, kunci SSH Anda akan disalin ke file `~/.ssh/authorized_keys` di server.
+
+### 3. **Login Tanpa Memasukkan Kata Sandi:**
+
+Sekarang, Anda seharusnya dapat login ke server tanpa memasukkan kata sandi:
+
+```bash
+ssh username@alamat_ip_server
+```
+
+Jika semuanya berhasil diatur, Anda akan masuk tanpa diminta kata sandi.
+
+### Catatan Penting:
+
+- Pastikan direktori `.ssh` dan file `authorized_keys` memiliki izin yang benar di server. Direktori `.ssh` sebaiknya memiliki izin `700`, dan file `authorized_keys` sebaiknya memiliki izin `600`.
+  
+  ```bash
+  chmod 700 ~/.ssh
+  chmod 600 ~/.ssh/authorized_keys
+  ```
+
+- Pastikan bahwa opsi `PasswordAuthentication` di konfigurasi SSH server (biasanya berada di `/etc/ssh/sshd_config`) diatur sebagai `yes`.
+
+  ```bash
+  PasswordAuthentication yes
+  ```
+
+- Jangan lupa restart layanan SSH setelah mengubah konfigurasi.
+
+  ```bash
+  sudo service ssh restart
+  ```
+
+Dengan langkah-langkah ini, Anda seharusnya dapat login ke server tanpa memasukkan kata sandi setiap kali. Ini meningkatkan keamanan dan kenyamanan, terutama jika Anda mengelola server jarak jauh.

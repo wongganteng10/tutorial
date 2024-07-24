@@ -1,0 +1,53 @@
+Tentu, berikut ini adalah perintah CLI untuk menginstal LAMP (Linux, Apache, MySQL, PHP) serta phpMyAdmin di server Linux, beserta konfigurasinya:
+
+1. **Instalasi Apache**:
+```bash
+sudo apt update
+sudo apt install apache2
+```
+
+2. **Instalasi MySQL (MariaDB)**:
+```bash
+sudo apt install mariadb-server
+sudo mysql_secure_installation
+```
+Ikuti langkah-langkahnya dan atur kata sandi root MySQL serta pilihan keamanan lainnya.
+
+3. **Instalasi PHP**:
+```bash
+sudo apt install php libapache2-mod-php php-mysql
+```
+
+4. **Mengaktifkan modul PHP di Apache**:
+```bash
+sudo a2enmod php
+sudo systemctl restart apache2
+```
+
+5. **Instalasi phpMyAdmin**:
+```bash
+sudo apt install phpmyadmin
+```
+Selama instalasi, Anda akan diminta untuk memilih server web yang ingin Anda konfigurasikan untuk phpMyAdmin. Pilihlah Apache2, lalu konfirmasikan.
+
+6. **Konfigurasi phpMyAdmin**:
+Setelah instalasi, tambahkan konfigurasi phpMyAdmin ke dalam konfigurasi Apache:
+```bash
+sudo nano /etc/apache2/apache2.conf
+```
+Tambahkan baris berikut di akhir file:
+```
+Include /etc/phpmyadmin/apache.conf
+```
+Simpan dan keluar dari editor teks.
+
+7. **Restart Apache untuk menerapkan perubahan**:
+```bash
+sudo systemctl restart apache2
+```
+
+Sekarang, Anda harus dapat mengakses phpMyAdmin melalui browser dengan mengunjungi `http://alamat_ip_server/phpmyadmin`.
+
+Pastikan Anda mengganti `alamat_ip_server` dengan alamat IP aktual dari server Anda.
+
+Selamat mencoba! Jika Anda mengalami kesulitan atau memiliki pertanyaan lebih lanjut, jangan ragu untuk bertanya.
