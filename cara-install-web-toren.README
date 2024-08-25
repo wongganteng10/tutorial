@@ -1,0 +1,41 @@
+To install the Transmission web interface on your Ubuntu Server 22.04, follow these steps:
+
+### Step 1: Update and Upgrade
+First, ensure that your system is up to date by running:
+```bash
+sudo apt update && sudo apt upgrade -y
+```
+
+### Step 2: Install Transmission
+Install Transmission and its web interface:
+```bash
+sudo apt install transmission-cli transmission-common transmission-daemon -y
+```
+
+### Step 3: Configure Transmission Daemon
+The Transmission daemon runs as a service, and you can configure it by editing the settings file:
+```bash
+sudo systemctl stop transmission-daemon
+sudo nano /etc/transmission-daemon/settings.json
+```
+
+In the configuration file, you can set the following important options:
+- **rpc-enabled**: Ensure this is set to `true` to enable the web interface.
+- **rpc-whitelist**: Set this to `"*"` to allow access from any IP, or specify particular IPs.
+- **rpc-username** and **rpc-password**: Set these to control access to the web interface.
+  
+After making your changes, save the file and exit.
+
+### Step 4: Start Transmission Daemon
+Start the Transmission service again:
+```bash
+sudo systemctl start transmission-daemon
+```
+
+### Step 5: Access the Web Interface
+Now, you should be able to access the Transmission web interface by navigating to the following address in your browser:
+```
+http://<your-server-ip>:9091
+```
+
+You may need to adjust your firewall settings to allow access to port 9091 if necessary.
