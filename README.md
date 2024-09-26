@@ -5,4 +5,4 @@
 * [[Kali Linux: Membuat LiveUSB]](
 https://github.com/wongganteng10/tutorial/wiki/Kali-Linux%3A-Membuat-LiveUSB)
 
-[[file sharing ubuntu]]
+* [[file sharing ubuntu]](https://github.com/wongganteng10/tutorial/wiki/file-sharing-ubuntu)
