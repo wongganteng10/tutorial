@@ -6,3 +6,5 @@
 https://github.com/wongganteng10/tutorial/wiki/Kali-Linux%3A-Membuat-LiveUSB)
 
 * [file sharing ubuntu](https://github.com/wongganteng10/tutorial/wiki/file-sharing-ubuntu)
+
+* [file sharing windows ke ubuntu virtualBox](https://github.com/wongganteng10/tutorial/wiki/file-sharing-windows-ke-ubuntu-virtualBox)
