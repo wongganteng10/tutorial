@@ -9,7 +9,7 @@ https://github.com/wongganteng10/tutorial/wiki/Kali-Linux%3A-Membuat-LiveUSB)
 
 * [file sharing windows ke ubuntu virtualBox](https://github.com/wongganteng10/tutorial/wiki/file-sharing-windows-ke-ubuntu-virtualBox)
 
-[pengaturan proxy tethering pada server Ubuntu](https://github.com/wongganteng10/tutorial/wiki/pengaturan-proxy-tethering-pada-server-Ubuntu)
+* [pengaturan proxy tethering pada server Ubuntu](https://github.com/wongganteng10/tutorial/wiki/pengaturan-proxy-tethering-pada-server-Ubuntu)
 
 
 
