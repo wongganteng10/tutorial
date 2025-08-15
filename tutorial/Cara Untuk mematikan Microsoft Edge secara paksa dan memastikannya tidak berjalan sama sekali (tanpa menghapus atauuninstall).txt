@@ -1,0 +1,53 @@
+Untuk mematikan Microsoft Edge secara paksa dan memastikannya tidak berjalan sama sekali (tanpa menghapus/uninstall), Anda bisa mengikuti beberapa langkah berikut:
+
+### **1. Tutup Proses Edge yang Sedang Berjalan di Task Manager**
+- Tekan **`Ctrl + Shift + Esc`** untuk membuka **Task Manager**.
+- Cari proses terkait Microsoft Edge (misalnya **"Microsoft Edge"**, **"msedge.exe"**, atau **"MicrosoftEdgeCP.exe"**).
+- Klik kanan pada setiap proses terkait Edge dan pilih **"End task"**.
+
+### **2. Nonaktifkan Edge dari Startup (Jika Ada)**
+- Buka **Task Manager** (**`Ctrl + Shift + Esc`**).
+- Buka tab **Startup**.
+- Jika ada entri Microsoft Edge, klik kanan dan pilih **Disable**.
+
+### **3. Hentikan Layanan (Services) Edge (Jika Ada)**
+- Tekan **`Win + R`**, ketik **`services.msc`**, lalu tekan **Enter**.
+- Cari layanan terkait Microsoft Edge (misalnya **"Microsoft Edge Elevation Service"**).
+- Klik kanan, pilih **Properties**, lalu ubah **Startup type** menjadi **Disabled**.
+- Klik **Stop** untuk menghentikan layanan jika sedang berjalan.
+
+### **4. Blokir Edge Menggunakan Group Policy Editor (Windows Pro/Enterprise)**
+- Tekan **`Win + R`**, ketik **`gpedit.msc`**, lalu tekan **Enter**.
+- Buka:  
+  **`Computer Configuration > Administrative Templates > Windows Components > Microsoft Edge`**  
+  (Jika tidak ada, coba cari di **"Microsoft Edge Update"**).
+- Cari opsi **"Allow Microsoft Edge to pre-launch at Windows startup"** dan **"Allow Microsoft Edge to start and load the Start and New Tab page at Windows startup"**, lalu set ke **Disabled**.
+- Restart komputer.
+
+### **5. Blokir Edge Menggunakan Registry Editor (Hati-hati!)**
+- Tekan **`Win + R`**, ketik **`regedit`**, lalu tekan **Enter**.
+- Navigasi ke:  
+  **`HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft`**  
+  - Jika tidak ada folder **Microsoft Edge**, buat key baru dengan nama **Edge**.
+  - Di dalamnya, buat **DWORD (32-bit) Value** bernama **"BackgroundModeEnabled"** dan set nilainya ke **0**.
+- Restart komputer.
+
+### **6. Matikan Fitur Background Apps untuk Edge**
+- Buka **Settings** (**`Win + I`**).
+- Pilih **Privacy > Background apps**.
+- Cari **Microsoft Edge** dan matikan toggle-nya.
+
+### **7. Gunakan Aplikasi Pihak Ketiga untuk Memblock Proses (Opsional)**
+- Anda bisa menggunakan tools seperti **"Process Explorer"** (Microsoft Sysinternals) atau **"Autoruns"** untuk memonitor dan memblokir proses Edge secara manual.
+
+### **8. Hapus Task Scheduled yang Menjalankan Edge Otomatis**
+- Tekan **`Win + R`**, ketik **`taskschd.msc`**, lalu tekan **Enter**.
+- Cari task yang terkait **Microsoft Edge** (misalnya di **Microsoft > Windows > EdgeUpdate**).
+- Klik kanan dan pilih **Disable** atau **Delete**.
+
+### **Catatan Penting:**
+- Microsoft Edge terintegrasi dengan Windows 10/11, jadi beberapa fitur mungkin tetap berjalan di background meskipun sudah dimatikan.
+- Jika Anda benar-benar ingin menonaktifkannya sepenuhnya, pertimbangkan untuk **menghapusnya menggunakan PowerShell** (tetapi ini bisa memengaruhi sistem).
+- Pastikan Anda tidak membutuhkan Edge untuk kompatibilitas aplikasi tertentu sebelum menonaktifkannya.
+
+Jika ada langkah yang tidak berhasil, beri tahu saya versi Windows yang Anda gunakan, saya bisa bantu lebih lanjut!
