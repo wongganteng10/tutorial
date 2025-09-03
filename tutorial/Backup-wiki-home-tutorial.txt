@@ -1,0 +1,72 @@
+
+# **tutorial ubuntu**
+
+* [cara install web toren](https://github.com/wongganteng10/tutorial/wiki/cara-install-web-toren)
+* [Cara login ke server tanpa memasukkan kata sandi](https://github.com/wongganteng10/tutorial/wiki/Cara-login-ke-server-tanpa-memasukkan-kata-sandi)
+* [cara mempublikasikan folder di linux](https://github.com/wongganteng10/tutorial/wiki/cara-mempublikasikan-folder-di-linux)
+* [cara menghapus paket yang sudah di install di ubuntu](https://github.com/wongganteng10/tutorial/wiki/cara-menghapus-paket-yang-sudah-di-install-di-ubuntu)
+* [cara menginstal WordPress di server Ubuntu](https://github.com/wongganteng10/tutorial/wiki/cara-menginstal-WordPress-di-server-Ubuntu)
+* [cara menjalankan file .sh secara otomatis setiap kali PC dinyalakan (saat booting)](https://github.com/wongganteng10/tutorial/wiki/cara-menjalankan-file-.sh-secara-otomatis-setiap-kali-PC-dinyalakan-(saat-booting))
+* [file sharing ubuntu](https://github.com/wongganteng10/tutorial/wiki/file-sharing-ubuntu)
+* [Flashing file seperti autoboot.rc](https://github.com/wongganteng10/tutorial/wiki/Flashing-file-seperti-autoboot.rc)
+* [home‐server](https://github.com/wongganteng10/tutorial/wiki/home%E2%80%90server)
+* [Instalasi LAMP di Ubuntu Server](https://github.com/wongganteng10/tutorial/wiki/Instalasi-LAMP-di-Ubuntu-Server)
+* [Install DVWA di Ubuntu Server](https://github.com/wongganteng10/tutorial/wiki/Install-DVWA-di-Ubuntu-Server)
+* [Jenis‐Jenis Kunci SSH dengan `ssh‐keygen`](https://github.com/wongganteng10/tutorial/wiki/Jenis%E2%80%90Jenis-Kunci-SSH-dengan-%60ssh%E2%80%90keygen%60)
+* [Konfigurasi Netplan di Ubuntu Server](https://github.com/wongganteng10/tutorial/wiki/Konfigurasi-Netplan-di-Ubuntu-Server)
+* [Konfigurasi Samba pada Ubuntu Server](https://github.com/wongganteng10/tutorial/wiki/Konfigurasi-Samba-pada-Ubuntu-Server)
+* [Panduan passwd Command](https://github.com/wongganteng10/tutorial/wiki/Panduan-passwd-Command)
+* [Panduan Penggunaan Perintah `find`](https://github.com/wongganteng10/tutorial/wiki/Panduan-Penggunaan-Perintah-%60find%60)
+* [Panduan Penggunaan Perintah `usermod`](https://github.com/wongganteng10/tutorial/wiki/Panduan-Penggunaan-Perintah-%60usermod%60)
+* [Panduan Penggunaan Perintah adduser dan addgroup](https://github.com/wongganteng10/tutorial/wiki/Panduan-Penggunaan-Perintah-adduser-dan-addgroup)
+* [pengaturan proxy tethering pada server Ubuntu](https://github.com/wongganteng10/tutorial/wiki/pengaturan-proxy-tethering-pada-server-Ubuntu)
+* [tutor install wordprass](https://github.com/wongganteng10/tutorial/wiki/tutor-install-wordprass)
+* [membuat wiki di server lokal sendiri](https://github.com/wongganteng10/tutorial/wiki/cara-membuat-wiki-di-server-lokal-sendiri)
+* [cara membuat email di server](https://github.com/wongganteng10/tutorial/wiki/cara-membuat-email-di-server)
+* [cara install nodejs dan npm](https://github.com/wongganteng10/tutorial/wiki/cara-install-nodejs-dan-npm)
+* [cara membuat aplikasi `.exe`](https://github.com/wongganteng10/tutorial/wiki/cara-membuat-aplikasi-exe)
+* [cara download paket npm dan menjalankan secara ofline](https://github.com/wongganteng10/tutorial/wiki/cara-download-paket-npm-dan-menjalankan-secara-ofline)
+* [link ISO](https://github.com/wongganteng10/tutorial/wiki/link-iso)
+* [file sharing windows ke ubuntu virtualBox](https://github.com/wongganteng10/tutorial/wiki/file-sharing-windows-ke-ubuntu-virtualBox)
+* [membuat perintah bash tanpa henti menggunakan loop](https://github.com/wongganteng10/tutorial/wiki/membuat-perintah-bash-tanpa-henti-menggunakan-loop)
+* [mencari proses yang sedang berjalan pada terminal](https://github.com/wongganteng10/tutorial/wiki/mencari-proses-yang-sedang-berjalan-pada-terminal)
+* [langkah-langkah untuk menginstal dan menguninstall Google Chrome di Ubuntu](https://github.com/wongganteng10/tutorial/wiki/langkah%E2%80%90langkah-untuk-menginstal-dan-menguninstall-Google-Chrome-di-Ubuntu)
+* [[Memperbarui Paket di Linux Menggunakan sudo apt install --only-upgrade]]
+* [[Skrip Upgrade Paket APT]]
+* [[Menonaktifkan Mode TCP/IP di Perangkat Android Menggunakan ADB]]
+* [[Cara Menghapus Remote Git dan Konfigurasi Global Git]]
+* [[Mengatasi Pesan Error GitHub Terkait Otentikasi]]
+* [[Cara Mengunduh dan Menginstal Perangkat Lunak di Linux Secara Offline]]
+* [[Menggunakan Hostname dengan Alamat IP Dinamis Tanpa ddclient]]
+* [[Panduan Membuat Wordlist Password Sendiri untuk Menguji Keamanan Login Server]]
+* [[membuat wordlist password di linux]]
+* [[perintah dasar Aircrack-ng]]
+* [[Penggunaan sed untuk Mengganti Teks dalam File]]
+* [[Menghapus Karakter Carriage Return dari File dengan]]
+* [[eror (/bin/bash^M) di file .sh]]
+* [[Menebak Password WiFi Per Karakter Menggunakan Hashcat]]
+* [[Memecahkan File .cap dan Menampilkan Password Per Huruf Menggunakan Aircrack-ng]]
+* [[Perintah Macchanger linux]]
+* [[Untuk menghubungkan TP‐Link TL‐WR722N ke server Ubuntu]]
+
+* [[Mengubah dan Mengembalikan MAC Address pada Linux]]
+
+* [[Panduan Lengkap Menggunakan wget: Unduh File dari Internet dengan Mudah]]
+
+* [[Cara Install Google Chrome di Linux Menggunakan Terminal]]
+
+* [[Wiki: Perintah netsh advfirewall firewall add rule outbound rules]]
+* [[Cara Mengatasi kunci GPG repositori Kali Linux telah kedaluwarsa]]
+* [[cara install driver dan menghubungkan USB WiFi TP-Link TL-WN722N v1 (Atheros AR9271)]]
+* [[cara install Nextcloud di server Ubuntu langkah demi langkah sampai bisa diakses lewat browser]]
+* [[mematikan Microsoft Edge secara paksa dan memastikannya tidak berjalan sama sekali (tanpa menghapus/uninstall)]]
+* [[Wiki: Mengunduh Paket di Debian/Ubuntu (apt)]]
+* [[Wiki: Menggunakan Repository Kali Linux 2022.4 (old.kali.org)]]
+* [[Manajemen GPG Key Repository Kali Linux]]
+* [[Panduan Umum Menghapus Aplikasi dan Dependensinya di Kali Linux atau Debian atau Ubuntu]]
+
+**1.** [[Cara Mengatasi kunci GPG repositori Kali Linux telah kedaluwarsa]]
+
+**2.** [[Untuk mengunduh paket tanpa menginstalnya di sistem berbasis Debian/Ubuntu (menggunakan apt), Anda bisa menggunakan perintah berikut]]
+
+**3.** [[Wiki: Menggunakan Repository Kali Linux 2022.4 (old.kali.org)]]
