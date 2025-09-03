@@ -1,0 +1,232 @@
+Baik 🙂
+Aku akan buatkan **template wiki umum** untuk **menghapus aplikasi beserta semua dependensinya** di Kali Linux, Debian, Ubuntu, dan distro turunannya.
+Wiki ini bisa kamu pakai **untuk aplikasi apa pun**, bukan cuma Airgeddon.
+
+---
+
+# 🧩 **Panduan Umum: Menghapus Aplikasi & Dependensinya di Kali Linux / Debian / Ubuntu**
+
+## **📌 Deskripsi**
+
+Sering kali, ketika kita menghapus aplikasi menggunakan `apt remove`, **file konfigurasi** dan **dependensi** masih tertinggal di sistem.
+Panduan ini menjelaskan **cara menghapus aplikasi secara bersih** (full purge) sekaligus membersihkan **dependensi, konfigurasi, dan cache**.
+
+---
+
+## **🛠️ 1. Periksa Apakah Aplikasi Terpasang**
+
+Ganti `<nama-aplikasi>` dengan nama paketnya:
+
+```bash
+dpkg -l | grep <nama-aplikasi>
+```
+
+Contoh:
+
+```bash
+dpkg -l | grep nmap
+```
+
+Kalau ada, hasilnya seperti:
+
+```
+ii  nmap   7.94-2   amd64   Network exploration tool and security scanner
+```
+
+Kalau kosong → aplikasi belum terpasang.
+
+---
+
+## **🧹 2. Hapus Aplikasi + Konfigurasinya**
+
+Gunakan **APT purge**:
+
+```bash
+sudo apt purge --auto-remove <nama-aplikasi>
+```
+
+Contoh:
+
+```bash
+sudo apt purge --auto-remove nmap
+```
+
+Penjelasan:
+
+* `purge` → hapus paket + file konfigurasi.
+* `--auto-remove` → hapus dependensi yang tidak lagi dibutuhkan.
+
+---
+
+## **🔍 3. Hapus Dependensi Tambahan (Opsional)**
+
+Beberapa aplikasi menarik **dependensi ekstra**.
+Untuk melihat semua dependensinya:
+
+```bash
+apt-cache depends <nama-aplikasi>
+```
+
+Jika ingin menghapus dependensi yang tidak lagi digunakan, jalankan:
+
+```bash
+sudo apt autoremove --purge
+```
+
+---
+
+## **🧽 4. Bersihkan Cache APT**
+
+Setelah menghapus aplikasi, bersihkan file `.deb` yang tidak diperlukan:
+
+```bash
+sudo apt clean
+sudo apt autoclean
+```
+
+* `clean` → hapus semua paket `.deb` di cache.
+* `autoclean` → hapus cache paket lama yang tidak tersedia lagi di repo.
+
+---
+
+## **📂 5. Hapus File Manual (Jika Install dari GitHub / Source)**
+
+Jika aplikasi diinstal dari **GitHub** atau **kompilasi manual**, biasanya file tidak otomatis dihapus.
+Untuk membersihkan:
+
+### **Cek Lokasi Instalasi**
+
+```bash
+whereis <nama-aplikasi>
+```
+
+Contoh:
+
+```bash
+whereis nmap
+```
+
+Biasanya hasilnya:
+
+```
+nmap: /usr/bin/nmap /usr/share/nmap
+```
+
+### **Hapus Folder Secara Manual**
+
+```bash
+sudo rm -rf /usr/bin/<nama-aplikasi> /usr/share/<nama-aplikasi> ~/ <nama-aplikasi>
+```
+
+---
+
+## **🧾 6. Verifikasi**
+
+Pastikan aplikasi sudah benar-benar hilang:
+
+```bash
+<nama-aplikasi> --version
+```
+
+Jika muncul:
+
+```
+Command '<nama-aplikasi>' not found
+```
+
+Berarti aplikasi sudah bersih.
+
+---
+
+## **⚡ 7. Script Otomatis Purge Aplikasi**
+
+Biar lebih cepat, buat script berikut:
+
+```bash
+#!/bin/bash
+# =========================================================
+# Script  : purge-app.sh
+# Fungsi  : Menghapus aplikasi + dependensinya secara bersih
+# =========================================================
+
+APP="$1"
+
+if [[ -z "$APP" ]]; then
+    echo "❌ Penggunaan: $0 <nama-aplikasi>"
+    exit 1
+fi
+
+echo "🔍 Mengecek apakah aplikasi '$APP' terpasang..."
+if dpkg -l | grep -q "$APP"; then
+    echo "🗑️ Menghapus $APP dan konfigurasinya..."
+    sudo apt purge --auto-remove "$APP" -y
+else
+    echo "✅ Aplikasi '$APP' tidak ditemukan."
+fi
+
+echo "🧹 Membersihkan dependensi tak terpakai..."
+sudo apt autoremove --purge -y
+
+echo "🧽 Membersihkan cache paket..."
+sudo apt clean
+sudo apt autoclean
+
+echo "📂 Menghapus file manual terkait $APP (jika ada)..."
+sudo rm -rf /usr/share/$APP /usr/bin/$APP /opt/$APP ~/$(basename $APP)
+
+echo "✅ Proses selesai! '$APP' dan dependensinya sudah terhapus."
+```
+
+### **Cara Pakai**
+
+```bash
+chmod +x purge-app.sh
+./purge-app.sh <nama-aplikasi>
+```
+
+Contoh:
+
+```bash
+./purge-app.sh airgeddon
+```
+
+---
+
+## **🧠 Tips**
+
+* Gunakan `apt purge` **bukan** `apt remove` → lebih bersih.
+* Selalu jalankan `sudo apt autoremove --purge` setelah uninstall.
+* Jika aplikasi diinstal via **snap** atau **flatpak**, cara hapusnya berbeda:
+
+  * Snap:
+
+    ```bash
+    sudo snap remove <nama-aplikasi>
+    ```
+  * Flatpak:
+
+    ```bash
+    flatpak uninstall <nama-aplikasi>
+    ```
+
+---
+
+## **📜 Kesimpulan**
+
+| **Perintah**                           | **Fungsi**                        |
+| -------------------------------------- | --------------------------------- |
+| `sudo apt purge --auto-remove`         | Hapus aplikasi + konfigurasinya   |
+| `sudo apt autoremove --purge`          | Bersihkan dependensi tak terpakai |
+| `sudo apt clean && sudo apt autoclean` | Hapus cache paket `.deb`          |
+| `whereis <app>`                        | Cari lokasi instalasi aplikasi    |
+| `sudo rm -rf ...`                      | Hapus file manual jika perlu      |
+
+Dengan langkah-langkah di atas, aplikasi dan semua dependensinya akan **terhapus bersih** dari sistem.
+
+---
+
+Kalau mau, aku bisa buatkan **wiki versi Markdown siap pakai** dengan tampilan profesional seperti **dokumentasi GitHub** — lengkap dengan **highlight code**, **tabel dependensi**, dan **catatan keamanan**.
+
+Apakah kamu mau saya buatkan versi **Markdown** yang rapi dan siap dipakai di **GitHub Wiki**?
+Kalau iya, aku bisa sekalian tambahkan daftar contoh aplikasi populer seperti **Airgeddon, Metasploit, Nmap, Wireshark, John the Ripper, Hashcat, dll**.
+Mau dibuatkan?
